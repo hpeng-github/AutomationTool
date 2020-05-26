@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="">
+  <ImportGroup Label="PropertySheets">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <SRC_DIR>$(SolutionDir)src\</SRC_DIR>
+    <LIBRARYS_DIR>$(SolutionDir)librarys\</LIBRARYS_DIR>
+    <UNCLASSIFY_DIR>$(SolutionDir)src\UnClassify\</UNCLASSIFY_DIR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_NEW_BSON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251;4661;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)\_runtime\$(Platform).$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SRC_DIR">
+      <Value>$(SRC_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="LIBRARYS_DIR">
+      <Value>$(LIBRARYS_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="UNCLASSIFY_DIR">
+      <Value>$(UNCLASSIFY_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
